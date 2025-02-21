@@ -1,6 +1,6 @@
 body {
   font-family: Arial, sans-serif;
-  margin: 0px 9rem;
+  margin: 0px 120px;
 }
 
 .navbar {
@@ -146,6 +146,28 @@ footer {
   padding: 12px 0;
 }
 
-.calendar{
+.calendar {
   font-size: 8px;
+}
+
+@media (max-width: 767px) {
+  body {
+    margin: 0 10px;
+  }
+  .pie {
+    justify-content: center;
+  }
+  .map img {
+    position: unset !important;
+    width: 100% !important;
+  }
+  .holder img {
+    width: 100% !important;
+  }
+}
+
+@media (min-width: 1024px) {
+  body {
+    margin: 0 120px;
+  }
 }
