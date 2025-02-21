@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Factsheet</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </head>
+  <body id="factsheetContent">
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+      <div class="container-fluid">
+        <div class="d-flex justify-content-end mb-2">
+          <button id="downloadPdfButton">Download PDF</button>
+        </div>
+        <div
+          class="row align-items-center border-top border-2 border-dark py-3"
+        >
+          <!-- FACTSHEET -->
+          <div class="col text-center text-md-start">
+            <h1 class="fw-bold mb-0">FACTSHEET</h1>
+          </div>
+
+          <!-- ISIN and Listings -->
+          <div
+            class="col border-start border-end border-2 border-dark py-3 px-3"
+          >
+            <p class="mb-0">ISIN: ES0105546008</p>
+            <p class="mb-0">Listings: Madrid</p>
+          </div>
+
+          <!-- Ticker and Codes -->
+          <div class="col px-3">
+            <p class="mb-0">Ticker symbol (Madrid): LDA</p>
+            <p class="mb-0">Bloomberg Code: LDA</p>
+            <p class="mb-0">Reuters Code: LDA</p>
+          </div>
+
+          <!-- Image -->
+          <div
+            class="col d-flex justify-content-center justify-content-md-end mt-3 mt-md-0"
+          >
+            <img src="images/logo.png" alt="IMAGE" class="logo img-fluid" />
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- LíNEA DIRECTA Section -->
+    <section id="linea-directa">
+      <div class="d-flex align-items-end py-3">
+        <h3 class="fw-bold mb-0 me-2 text-uppercase">Línea Directa</h3>
+        <div class="flex-grow-1 border-top border-2 border-dark"></div>
+      </div>
+
+      <p>
+        is the brand under which the company distributes insurance products in
+        respect to cars, motorcycles, company car fleets, as well as Home
+        insurance products. Thanks to its powerful advertising and its
+        communication strategy, based on visibility, reputation and
+        sustainability, Línea Directa is one of the most recognisable brands
+        among consumers.
+      </p>
+    </section>
+
+    <!-- Financial Section -->
+    <section id="financial">
+      <div class="d-flex align-items-end py-3">
+        <h4 class="fw-bold mb-0 me-2 text-uppercase">Financial Year</h4>
+        <div class="flex-grow-1 border-top border-2 border-dark"></div>
+      </div>
+
+      <div class="row d-flex">
+        <!-- First Row -->
+        <div class="col-md-3 col-sm-6 mb-4">
+          <div class="col-item">
+            <p><strong>27,254</strong></p>
+            <p>Employees</p>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 mb-4">
+          <div class="col-item">
+            <p><strong>1.96</strong></p>
+            <p>EUR</p>
+            <p>Earnings per share</p>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 mb-4">
+          <div class="col-item">
+            <p><strong>4,095</strong></p>
+            <p>million items</p>
+            <p>Mail Volume</p>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 mb-4">
+          <div class="col-item">
+            <p><strong>16</strong></p>
+            <p>
+              Kg CO<sub>2</sub>e/m<sup>3</sup> CO<sub>2</sub>e emissions per
+              shipment volume<sup>1</sup>
+            </p>
+          </div>
+        </div>
+
+        <!-- Second Row -->
+        <div class="col-md-3 col-sm-6 mb-4">
+          <div class="col-item">
+            <p><strong>2,741</strong></p>
+            <p>EUR m</p>
+            <p>Revenue</p>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 mb-4">
+          <div class="col-item">
+            <p><strong>1.78</strong></p>
+            <p>EUR</p>
+            <p>Revenue</p>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 mb-4">
+          <div class="col-item">
+            <p><strong>476</strong></p>
+            <p>million items</p>
+            <p>Mail Volume</p>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 mb-4">
+          <div class="col-item">
+            <p><strong>4,133</strong></p>
+            <p>Electric Vehicles</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Market Section -->
+    <section id="market">
+      <div class="row" style="position: relative">
+        <div class="col">
+          <div class="d-flex align-items-end py-3">
+            <h5
+              class="fw-bold mb-0 me-2"
+              style="position: relative; z-index: 1"
+            >
+              Gross written premiums
+            </h5>
+            <div
+              class="w-50 border-top border-2 border-dark"
+              style="position: relative; z-index: 1"
+            ></div>
+          </div>
+          <img src="images/pie.png" alt="pie" style="width: 60%" />
+        </div>
+        <div class="col">
+          <div
+            class="d-flex align-items-end py-3"
+            style="position: relative; z-index: 1"
+          >
+            <h5 class="fw-bold mb-0 me-3">Our Markets</h5>
+            <div class="flex-grow-1 border-top border-2 border-dark"></div>
+          </div>
+          <img
+            src="images/map.png"
+            alt="map"
+            style="position: absolute; top: 0; right: 0; width: 60%; z-index: 0"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Key Figures Section -->
+    <section id="key-figures">
+      <div class="d-flex align-items-end py-3">
+        <h4
+          class="fw-bold mb-0 me-2 text-uppercase"
+          style="position: relative; z-index: 1"
+        >
+          Key Figures
+        </h4>
+        <div
+          class="flex-grow-1 border-top border-2 border-dark"
+          style="position: relative; z-index: 1"
+        ></div>
+      </div>
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>EUR m</th>
+            <th></th>
+            <th>2021</th>
+            <th>2022</th>
+            <th>2023</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Revenue</td>
+            <td>EUR m</td>
+            <td>2,519.6</td>
+            <td>2,552.0</td>
+            <td>2,740.8</td>
+          </tr>
+          <tr>
+            <td>EBITDA</td>
+            <td>EUR m</td>
+            <td>370.4</td>
+            <td>372.7</td>
+            <td>391.6</td>
+          </tr>
+          <tr>
+            <td>EBITDA margin</td>
+            <td>%</td>
+            <td>14.7</td>
+            <td>14.8</td>
+            <td>14.3</td>
+          </tr>
+          <tr>
+            <td>EBIT</td>
+            <td>EURO m</td>
+            <td>204.7</td>
+            <td>188.4</td>
+            <td>190.2</td>
+          </tr>
+          <tr>
+            <td>EBIT Margin</td>
+            <td>%</td>
+            <td>8.1</td>
+            <td>7.5</td>
+            <td>6.9</td>
+          </tr>
+          <tr>
+            <td>Earnings per share</td>
+            <td>EUR</td>
+            <td>2.25</td>
+            <td>1.86</td>
+            <td>1.96</td>
+          </tr>
+          <tr>
+            <td>Total assets</td>
+            <td>EUR m</td>
+            <td>4,792.6</td>
+            <td>5,383.9</td>
+            <td>5,677.1</td>
+          </tr>
+          <tr>
+            <td>Operating free cashflow</td>
+            <td>EUR m<sup>2</sup></td>
+            <td>217.98</td>
+            <td>183.1</td>
+            <td>221.6</td>
+          </tr>
+          <tr>
+            <td>Employees</td>
+            <td>FTE</td>
+            <td>27,275</td>
+            <td>27,132</td>
+            <td>27,254</td>
+          </tr>
+          <tr>
+            <td>Customer Satisfaction</td>
+            <td>CSI<sup>3</sup></td>
+            <td>72</td>
+            <td>72</td>
+            <td>71</td>
+          </tr>
+          <tr>
+            <td>CO<sub>2</sub>e emissions per shipment volume<sup>1</sup></td>
+            <td>kg CO<sub>2</sub> e/m<sup>3</sup></td>
+            <td>19</td>
+            <td>19</td>
+            <td>16</td>
+          </tr>
+          <tr>
+            <td>Electric Vehicles</td>
+            <td>Number</td>
+            <td>2,462</td>
+            <td>3,121</td>
+            <td>4,133</td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="mb-4">
+        <p>
+          <small><sup>1</sup>Österreichische Post AG, Austria</small>
+        </p>
+        <p>
+          <small
+            ><sup>2</sup>Free cash flow before acquisitions, securities, money
+            market investments, growth capex and core banking assets</small
+          >
+        </p>
+        <p>
+          <small
+            ><sup>3</sup>Customer Satisfaction Index: Scale of 0-100, 50:
+            critical, 51-60: fair, 61-70: good, 71-80: very good, 81-100:
+            excellent</small
+          >
+        </p>
+      </div>
+    </section>
+
+    <!-- Investment Section -->
+    <section id="investment-story">
+      <div class="d-flex align-items-end py-3">
+        <h4 class="fw-bold mb-0 me-2 text-uppercase">Investment Story</h4>
+        <div class="flex-grow-1 border-top border-2 border-dark"></div>
+      </div>
+      <!-- First Row -->
+      <div class="row d-flex">
+        <div class="col-md-6 col-sm-6 mb-5">
+          <div class="d-flex flex-row align-items-center mb-2">
+            <p class="pe-2">Predictable Business Model</p>
+            <img src="images/A.svg" alt="map" style="width: 15px" />
+          </div>
+          <div class="col-story">
+            <ul>
+              <li>
+                Solid revenue development with leading market position in
+                Austria
+              </li>
+              <li>
+                Sustainable profitability due to an efficient cost structure
+                Promised Delivered
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-sm-6 mb-5">
+          <div class="d-flex flex-row align-items-center mb-2">
+            <p class="pe-2">Attractive Dividend Policy</p>
+            <img src="images/B.png" alt="map" style="width: 15px" />
+          </div>
+          <div class="col-story">
+            <ul>
+              <li>
+                Predictable development of dividends based on profitability and
+                generated cash flow
+              </li>
+              <li>
+                Annual dividend distribution of at least 75% of the Group net
+                profit planned
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Second Row -->
+        <div class="col-md-6 col-sm-6 mb-5">
+          <div class="d-flex flex-row align-items-center mb-2">
+            <p class="pe-2">
+              Promised - Delivered
+              <img src="images/B.png" alt="map" style="width: 15px" />
+            </p>
+          </div>
+
+          <div class="col-story">
+            <ul>
+              <li>
+                Prudent and realistic guidance with clearly defined objectives
+              </li>
+              <li>
+                Clear commitment to achieve communicated targets Attractive
+                Dividend Policy
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-6 mb-5">
+          <div class="d-flex flex-row align-items-center mb-2">
+            <p class="pe-2">
+              Decarbonisation of Logistics
+              <img src="images/B.png" alt="map" style="width: 15px" />
+            </p>
+          </div>
+
+          <div class="col-story">
+            <ul>
+              <li>Group-wide reduction in fossil energy sources</li>
+              <li>Massive reduction in carbon emissions in Austria by 2030</li>
+            </ul>
+          </div>
+
+          <p>
+            > <span class="text-decoration-underline">Investmentstory</span>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Share Performance Section -->
+    <section id="share-performance">
+      <div class="d-flex align-items-end py-3">
+        <h4 class="fw-bold mb-0 me-2 text-uppercase">Share Perfomance</h4>
+        <div class="flex-grow-1 border-top border-2 border-dark"></div>
+      </div>
+      <!-- Chart -->
+      <div><canvas id="lineaDirectaChart" style="height: 250px"></canvas></div>
+    </section>
+
+    <!-- Shareholder Structure Section -->
+    <section id="market">
+      <div class="row">
+        <div class="col-8">
+          <div class="d-flex align-items-end py-3">
+            <h5
+              class="fw-bold mb-0 me-2"
+              style="position: relative; z-index: 1"
+            >
+              Shareholder Structure
+            </h5>
+            <div
+              class="border-top border-2 border-dark"
+              style="width: 65%"
+            ></div>
+          </div>
+          <img src="images/SS-EN.png" alt="pie" style="width: 70%" />
+        </div>
+        <div class="col-4">
+          <div
+            class="d-flex align-items-center py-3"
+            style="position: relative; z-index: 1"
+          >
+            <div>
+              <h5 class="fw-bold mb-0 me-3">Our Dividend</h5>
+              <h6>EUR</h6>
+            </div>
+
+            <div class="flex-grow-1 border-top border-2 border-dark"></div>
+          </div>
+          <div style="width: 70%">
+            <img src="images/dividends2.png" alt="map" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Management Board Section -->
+    <section id="Management">
+      <div class="d-flex align-items-end py-3">
+        <h4 class="fw-bold mb-0 me-2 text-uppercase">Management Board</h4>
+        <div class="flex-grow-1 border-top border-2 border-dark"></div>
+      </div>
+
+      <div class="row d-flex">
+        <!-- First Row -->
+        <div class="col-md-4 col-sm-6 mb-4">
+          <div class="col-board">
+            <p><u>Patricia Ayuela</u></p>
+            <p>CEO</p>
+            <p>Chief Executive Officer</p>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6 mb-4">
+          <div class="col-board">
+            <p><u>Alfonso Botín-Sanz de Sautuola President President</u></p>
+            <p>President</p>
+            <p>President</p>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6 mb-4">
+          <div class="col-board">
+            <p><u>Fernando Masaveu</u></p>
+            <p>Director</p>
+            <p>Director</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="row d-flex">
+        <!-- First Row -->
+        <div class="col-md-6 col-sm-6 mb-4">
+          <h4 class="fw-bold mb-0 me-2 text-uppercase">Financial Calendar</h4>
+          <div class="row">
+            <div class="col"><p>18 April 2024</p></div>
+            <div class="col"><p>Annual General Meeting 2024</p></div>
+          </div>
+          <div class="row">
+            <div class="col"><p>26 May/02 May 2024</p></div>
+            <div class="col"><p>Ex-Date/Dividend payment day</p></div>
+          </div>
+          <div class="row">
+            <div class="col"><p>08 May 2024</p></div>
+            <div class="col"><p>Interim report for Q1 2024</p></div>
+          </div>
+          <div class="row">
+            <div class="col"><p>07 August 2024</p></div>
+            <div class="col"><p>Half-year financial report 2024</p></div>
+          </div>
+          <div class="row">
+            <div class="col"><p>06 November 2024</p></div>
+            <div class="col"><p>Interim report Q1-3 2024</p></div>
+          </div>
+          <p>
+            > <span class="text-decoration-underline">Financial Calendar</span>
+          </p>
+        </div>
+
+        <div class="col-md-6 col-sm-6 mb-4">
+          <h4 class="fw-bold mb-0 me-2 text-uppercase">
+            Contact Investor Relations
+          </h4>
+          <div>
+            <p>Rochusplatz 1, 1030 Madrid</p>
+            <p>Tel.: +43 57767-30400</p>
+            <p>E-mail: <u>investor@post.at</u></p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      const ctx = document.getElementById("lineaDirectaChart").getContext("2d");
+
+      const lineaDirectaChart = new Chart(ctx, {
+        type: "line",
+        data: {
+          labels: Array(180)
+            .fill()
+            .map((_, index) => {
+              const months = ["Mar", "Apr", "May", "Jun", "Jul", "Aug"];
+              const monthIndex = Math.floor(index / 30);
+              const day = (index % 30) + 1;
+              return `${months[monthIndex]} ${day}`;
+            }),
+          datasets: [
+            {
+              label: "Linea Directa",
+              data: [
+                1.02,
+                1.04,
+                1.06,
+                1.05,
+                1.03,
+                1.04,
+                1.07,
+                1.09,
+                1.11,
+                1.13,
+                1.12,
+                1.14,
+                1.16,
+                1.18,
+                1.15,
+                1.1,
+                1.12,
+                1.14,
+                1.06,
+                1.08,
+                1.03,
+                1.04,
+                1.09,
+                1.07,
+                1.05,
+                1.06,
+                1.04,
+                1.08,
+                1.1,
+                1.09, // March data (30 days)
+                1.12,
+                1.13,
+                1.15,
+                1.16,
+                1.17,
+                1.18,
+                1.2,
+                1.14,
+                1.12,
+                1.1,
+                1.08,
+                1.05,
+                1.06,
+                1.07,
+                1.09,
+                1.08,
+                1.07,
+                1.06,
+                1.04,
+                1.03,
+                1.02,
+                1.05,
+                1.07,
+                1.09,
+                1.1,
+                1.08,
+                1.12,
+                1.13,
+                1.14,
+                1.1, // April data (30 days)
+                1.18,
+                1.17,
+                1.16,
+                1.15,
+                1.14,
+                1.13,
+                1.12,
+                1.11,
+                1.1,
+                1.09,
+                1.08,
+                1.07,
+                1.06,
+                1.05,
+                1.04,
+                1.03,
+                1.02,
+                1.01,
+                1.0,
+                0.99,
+                1.0,
+                1.01,
+                1.03,
+                1.04,
+                1.05,
+                1.06,
+                1.07,
+                1.08,
+                1.1,
+                1.11, // May data (30 days)
+                1.12,
+                1.13,
+                1.14,
+                1.13,
+                1.15,
+                1.16,
+                1.17,
+                1.18,
+                1.19,
+                1.2,
+                1.18,
+                1.16,
+                1.14,
+                1.13,
+                1.12,
+                1.11,
+                1.1,
+                1.09,
+                1.08,
+                1.07,
+                1.06,
+                1.05,
+                1.04,
+                1.03,
+                1.02,
+                1.01,
+                1.0,
+                0.99,
+                0.98,
+                0.97, // June data (30 days)
+                1.12,
+                1.13,
+                1.14,
+                1.15,
+                1.16,
+                1.17,
+                1.18,
+                1.19,
+                1.18,
+                1.17,
+                1.16,
+                1.15,
+                1.14,
+                1.13,
+                1.12,
+                1.11,
+                1.1,
+                1.09,
+                1.08,
+                1.07,
+                1.06,
+                1.05,
+                1.04,
+                1.03,
+                1.02,
+                1.01,
+                1.0,
+                1.02,
+                1.03,
+                1.04, // July data (30 days)
+                1.09,
+                1.08,
+                1.07,
+                1.06,
+                1.05,
+                1.04,
+                1.03,
+                1.02,
+                1.01,
+                1.0,
+                0.99,
+                0.98,
+                0.97,
+                0.96,
+                0.95,
+                0.94,
+                0.93,
+                1.02,
+                1.11,
+                1.09,
+                1.19,
+                1.18,
+                1.07,
+                1.06,
+                1.05,
+                1.04,
+                1.1,
+                1.09,
+                1.1,
+                1.19,
+              ],
+              borderColor: "gray",
+              borderWidth: 2,
+              tension: 0,
+              pointRadius: 0,
+            },
+          ],
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          plugins: {
+            legend: {
+              display: true,
+              position: "top",
+            },
+            tooltip: {
+              enabled: true,
+            },
+          },
+          scales: {
+            x: {
+              title: {
+                display: true,
+                text: "Month",
+              },
+              ticks: {
+                autoSkip: true,
+                maxRotation: 45,
+                minRotation: 45,
+              },
+            },
+            y: {
+              title: {
+                display: true,
+                text: "EUR",
+              },
+              beginAtZero: false,
+            },
+          },
+        },
+      });
+    </script>
+
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script>
+      document
+        .getElementById("downloadPdfButton")
+        .addEventListener("click", function () {
+          const element = document.getElementById("factsheetContent");
+
+          html2canvas(element).then((canvas) => {
+            const imgData = canvas.toDataURL("image/png");
+            const { jsPDF } = window.jspdf;
+            const doc = new jsPDF();
+
+            doc.addImage(imgData, "PNG", 10, 10, 180, 0);
+            doc.save("Factsheet.pdf");
+          });
+        });
+    </script> -->
+  </body>
+</html>
